@@ -30,7 +30,7 @@
         <!--  Custom Style CSS  -->
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
-    <body data-spy="scroll" data-target="#scrollspy" data-offset="1" class="dark">
+    <body data-spy="scroll" data-target="#scrollspy" data-offset="1" class="dark arshia-dark">
 
     <!--  Pre Loader  -->
     <div id="overlayer"></div>
@@ -766,7 +766,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="image-border">
-                                    <img src="./assets/img/bio1.jpg" alt="/">
+                                    <img id="bio-img" src="./assets/img/bio-dark.jpg" alt="/">
                                 </div>
                             </div>
                             <div class="col-lg-6 mt-4 mt-lg-0">
@@ -1641,7 +1641,7 @@
     <!-- Start Options -->
     <div id="color-switcher" class="color-switcher" >
         <div class="text-center color-pallet hide">
-            <h6 class="theme-skin-title">Theme Skin</h6>
+            <h6 class="theme-skin-title">Button Type</h6>
             <ul class="theme-skin list-inline">
                 <li class="list-inline-item">
                     <a href="javascript:void(0)" class="flat-skin active">Flat</a>
@@ -1651,13 +1651,13 @@
                 </li>
             </ul>
             
-            <h6 class="my-2 color-scheme-title">Light & Dark Version</h6>
+            <h6 class="my-2 color-scheme-title">Light & Dark Theme</h6>
             <ul class="color-scheme list-inline">
                 <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="light-scheme active"><i class="lni-sun"></i> Light</a>
+                    <a href="javascript:void(0)" class="light-scheme active" onclick="changeBioSrc(false)"><i class="lni-sun"></i> Light</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="dark-scheme"><i class="lni-night"></i> Dark</a>
+                    <a href="javascript:void(0)" class="dark-scheme" onclick="changeBioSrc(true)"><i class="lni-night"></i> Dark</a>
                 </li>
             </ul>
         </div>
@@ -1689,6 +1689,17 @@
     <script src="assets/js/particles.app.js"></script>
     <!--  Custom JS  -->
     <script src="assets/js/arshia.js"></script>
+
+    <script>
+        function changeBioSrc(isDark) {
+            const bioiImg = document.getElementById("bio-img");
+            if (isDark) {
+                bioiImg.src = "./assets/img/bio-dark.jpg"
+            } else {
+                bioiImg.src = "./assets/img/bio-light.jpg"
+            }
+        }
+    </script>
 
     </body>
 </html>
