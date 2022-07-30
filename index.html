@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Freya Luo</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Retrina Group" />
+
+        <!--  FavIcon  -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+        <!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+        <!-- FontAwesome Css -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <!-- Line icon Css -->
+        <link rel="stylesheet" href="assets/css/LineIcons.css">
+        <!-- Bootstrap Css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <!-- Owl Carousel Css -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <!-- Magnific Popup Css -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- Colors Css -->
+        <link rel="stylesheet" href="assets/css/color/orange-color.css" id="option-color">
+        <!--  Custom Style CSS  -->
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body data-spy="scroll" data-target="#scrollspy" data-offset="1" class="dark">
+
+    <!--  Pre Loader  -->
+    <div id="overlayer"></div>
+    <span class="loader"></span>
+
+    <!-- Portfolio Single Modal Start -->
+    <div class="portfolio-single modal fade" id="portfolio-single-1" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalScrollable">Code Book</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="pt-4 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-10 mx-auto">
+                                    <div class="text-center">
+                                        <h2 class="mb-3">Code <span class="base-color"> Book</span></h2>
+                                        <p class="max-width-450">An interactive browser-based JS coding and text editing application.</p>
+                                    </div>
+                                    <div class="row contact-info mt-3">
+                                        <div class="col-md-6 p-title-border mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6 class="contact_detail-title">Github Repo:</h6>
+                                                    <a class="mb-0" href="https://github.com/Freya-Luo/code-book" style="font-weight: bold; color: rgb(235, 235, 170)">checkout here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6>Skills:</h6>
+                                                    <p class="mb-0">React / Typescript / Web Assembly</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="portfolio-single-item image-border">
+                                            <img src="./assets/img/codebook.gif" loading="lazy" class="d-block" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="text-md-left mt-5">
+                                        <p class="my-3">
+                                            This is an interactive browser-based JS coding and text editing React Application. The coding part mimics the famous services like CodePen or CodeSandBox, 
+                                            but the <span style="font-weight: bold;">code bundling and transpiling</span> are done directly in the browser. Currently, the coding editor supports CommonJS and ES6 Modules syntax, and it does 
+                                            not support other frameworks, e.g., Vue or Angular.
+                                        </p>
+                                        <p class="mt-3 mb-0">If multiple code cells are created, the execution follows the cumulative code rule. A code cell can access all the global objects defined 
+                                            in its previouse (above) cells.
+                                        </p>
+                                        <p class="mt-3 mb-0">Supports running app via local API server instead of develpoment server:
+                                            <ul>
+                                                <li>
+                                                    <span style="font-weight: bold;">CLI</span> package : Allows users to run command from the terminal to start off the local-server program
+                                                </li>
+                                                <li>
+                                                    <span style="font-weight: bold;">Local-server</span> package: A local server of this React app running on users' machines
+                                                    <ul>
+                                                        <li>
+                                                            <span style="font-style: italic;">GET "/"</span> => fetch index.html/index.js for React app
+                                                        </li>
+                                                        <li>
+                                                            <span style="font-style: italic;">GET "/cells" </span>=> fetch the list of code/text cells stored in a file (filename is provided via CLI)
+                                                        </li>
+                                                        <li>
+                                                            <span style="font-style: italic;">POST "/cells"</span> => updates cells, and writes into the file
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-single modal fade" id="portfolio-single-2" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalScrollable">Cloud Clothing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="pt-4 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-10 mx-auto">
+                                    <div class="text-center">
+                                        <h2 class="mb-3">Cloud <span class="base-color"> Clothing</span></h2>
+                                        <p class="max-width-450">A full-stack e-commerce progressive web application (PWA) supporting mobile responsiveness.</p>
+                                    </div>
+                                    <div class="row contact-info mt-5">
+                                        <div class="col-md-4">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6 class="contact_detail-title">Github Repo:</h6>
+                                                    <a class="mb-0" href="https://github.com/Freya-Luo/cloud-clothing" style="font-weight: bold; color: rgb(235, 235, 170)">checkout here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 p-title-border mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6 class="contact_detail-title">Live Demo:</h6>
+                                                    <a class="mb-0" href="https://tangerine-panda-aed6e8.netlify.app/" style="font-weight: bold; color: rgb(235, 235, 170)">click here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6>Skills:</h6>
+                                                    <p class="mb-0">React / GraphQL / Apollo / PWAs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="portfolio-single-item image-border">
+                                            <img src="./assets/img/clothing.gif" loading="lazy" class="d-block" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="text-md-left mt-5">
+                                        <p class="my-3">
+                                            This a full-stack progressive web application which is just ike any traditional e-commerce sites. Users can browser categories, toggle cart items, 
+                                            and their identities are verified by Firebase authentication mechanism. By integrating Stripe API and Netlify hosting platform, any payment requests 
+                                            initiated in frontend, even mock ones, would be taken over by backend for the security purpose. (Need to carry SECRET KEY)
+                                        </p>
+                                        <p class="mt-3 mb-0">An experimental approach is also implemented in this project.
+                                            <ul>
+                                                <li>
+                                                    <span style="font-style: italic;">Mobile responsiveness</span> supoprt
+                                                </li>
+                                                <li>
+                                                    <span style="font-style: italic;">GraphQL server and Apollo client</span> are applied to replace REST API 
+                                                </li>
+                                                <li>
+                                                    <span style="font-style: italic;">Service Worker</span> is added into the existing project to convert it to PWA
+                                                </li>
+                                            </ul> 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-single modal fade" id="portfolio-single-3" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalScrollable">Form Generator</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="pt-4 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-10 mx-auto">
+                                    <div class="text-center">
+                                        <h2 class="mb-3">Form <span class="base-color"> Generator</span></h2>
+                                        <p class="max-width-450">An automatic form generator that converts user's JSON input to HTML Form.</p>
+                                    </div>
+                                    <div class="row contact-info mt-5">
+                                        <div class="col-md-6">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6 class="contact_detail-title">Github Repo:</h6>
+                                                    <a class="mb-0" href="https://github.com/Freya-Luo/form-generator" style="font-weight: bold; color: rgb(235, 235, 170)">checkout here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6>Skills:</h6>
+                                                    <p class="mb-0">Vue3 / JSON Schema / Composition API</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="portfolio-single-item image-border">
+                                            <img src="./assets/img/form.gif" loading="lazy" class="d-block" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="text-md-left mt-5">
+                                        <p class="my-3">
+                                            Based on the user inputs, which are essentially JSON Schemas, this application automatically generates HTML Forms for them.
+                                            The <span style="font-weight: bold; font-style: italic;">type</span> keyword in the input schema defines what kind of form 
+                                            field users want to render. The available options include string, number, array, and object. In addtion, nested data structures
+                                            are also supported. For example, with single typed array, user can either specify items to be primitive types, like string,
+                                            or reference types, like object type. Multiple typed array can have different types in one single array, however, each element
+                                            must be explicitly specified. 
+                                        </p>
+                                        <p>
+                                            Another feature of this form generator is to validate form fields, which takes the advantages of JSON Schema Ajv validator.
+                                        </p>
+                                        <p>
+                                            However, users may need to render their own forms in different ways, and this requires each individual form component to be 
+                                            independent from others. One of the most important improvement is extracting all rendering logic into a theme provider while
+                                            keeping the underling business logic inside the original component. By applying the similar design pattern, users can even customize
+                                            JSON Schema validators and formats to gain more flexibility.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-single modal fade" id="portfolio-single-4" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalScrollable">E-book Reader</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="pt-4 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-10 mx-auto">
+                                    <div class="text-center">
+                                        <h2 class="mb-3">eBook <span class="base-color"> Reader</span></h2>
+                                        <p class="max-width-450">An eBook reader supporting full-text search, download, pagination, caching, and theme changing.</p>
+                                    </div>
+                                    <div class="row contact-info mt-5">
+                                        <div class="col-md-6">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6 class="contact_detail-title">Github Repo:</h6>
+                                                    <a class="mb-0" href="https://github.com/Freya-Luo/eBookReader" style="font-weight: bold; color: rgb(235, 235, 170)">checkout here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6>Skills:</h6>
+                                                    <p class="mb-0">Vue2 / NodeJS / ePub.js / Nginx</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="portfolio-single-item image-border">
+                                            <img src="./assets/img/ebook.gif" loading="lazy" class="d-block" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="text-md-left mt-5">
+                                        <p class="my-3">
+                                            The eBook reader is built on top of Vue2 wit ePub.js engine and backed by Nginx. The core components and their main responsibilities are as follows:
+                                            <ul>
+                                                <li>
+                                                    <span style="font-weight: bold; font-style: italic;">Shelf</span> Component: Store current reading eBooks. It supports adding, removing, and categorizing
+                                                    books into different groups. Extended features are caching and/or downloading eBooks into local devices and setting the privacy of eBook reading status.
+                                                </li>
+                                                <li>
+                                                    <span style="font-weight: bold; font-style: italic;">Home</span> Component: Store and categorize all eBooks. Users can choose an eBook by
+                                                    clicking its cover image, searching the book title, or using the flashcard to randomly pick one.
+                                                </li>
+                                                <li>
+                                                    <span style="font-weight: bold; font-style: italic;">eBook</span> Component: Online reader integrated with ePub.js. By unpacking epub files, it can successfully
+                                                    render book content, record current reading progress, and support full-text searching and highlighting. Besides, switching between multiple 
+                                                    themes and fonts (including font family and font size) are also implemented for a better user experience.
+                                                </li>
+                                                <li>
+                                                    <span style="font-weight: bold; font-style: italic;">Detail</span> Component: List all the details of an eBook, including a brief description and a table of contents.
+                                                </li>
+                                            </ul>
+                                        </p>
+                                        <p class="mt-3 mb-0">
+                                            The backend routes are set up with Node.js and express. Currently, all epub files and images are stored locally and delivered by Nginx server.
+                                            (As this application only focuses on the business logic and functionalities develpoment, the available resources are limited. 
+                                            Most eBooks come with mock content, or even just with the cover pictures.)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-single modal fade" id="portfolio-single-5" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalScrollable">Analytics Framework</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="pt-4 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-10 mx-auto">
+                                    <div class="text-center">
+                                        <h2 class="mb-3">Analytics <span class="base-color"> Framework</span></h2>
+                                        <p class="max-width-450">A framework which analyzes sentiment of articles/trends collected within a specific time.</p>
+                                    </div>
+                                    <div class="row contact-info mt-5">
+                                        <div class="col-md-6">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6 class="contact_detail-title">Github Repo:</h6>
+                                                    <a class="mb-0" href="https://github.com/Freya-Luo/data-visualization-framework/settings" style="font-weight: bold; color: rgb(235, 235, 170)">checkout here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6>Skills:</h6>
+                                                    <p class="mb-0">Java / Google NLP / Plotly</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="portfolio-single-item image-border">
+                                            <img src="./assets/img/framework.gif" loading="lazy" class="d-block" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="text-md-left mt-5">
+                                        <p class="my-3">
+                                           This framework utilizes the text passed from data plugins, analyzes the sentiment using Google Natural Language Processiong (NLP) API and calculates scores (positive, neutral, or negative).
+                                           The returned scores and timestamps would be consumed by visualization plugins, and different charts will be rendered.
+                                        </p>
+                                        <p class="my-3">
+                                            In this project, there are two default data plugins and two default visualization plugins for the purpose of demonstration. Data plugins fetch articles and trends from News
+                                            and Twitter APIs while visualization plugins plot Bar charts and Pie chars with the help of Plotly graphing library. Users can customize any data plugins and apply them to this analyzing framework 
+                                            as long as data has <span style="font-style: italic;font-weight: bold ;">texts and timestamp</span> fields.
+                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="portfolio-single modal fade" id="portfolio-single-6" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalScrollable">Bubble Bobble</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="pt-4 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-10 mx-auto">
+                                    <div class="text-center">
+                                        <h2 class="mb-3">Bubble <span class="base-color"> Bobble</span></h2>
+                                        <p class="max-width-450">A classic Japanese arcade game first invented in 1986 by Taito.</p>
+                                    </div>
+                                    <div class="row contact-info mt-5">
+                                        <div class="col-md-6">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6 class="contact_detail-title">Github Repo:</h6>
+                                                    <a class="mb-0" href="https://github.com/Freya-Luo/bubble-bobble" style="font-weight: bold; color: rgb(235, 235, 170)">checkout here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6>Skills:</h6>
+                                                    <p class="mb-0">C++/ CMake</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="portfolio-single-item image-border">
+                                            <img src="./assets/img/bubble.gif" loading="lazy" class="d-block" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="text-md-left mt-5">
+                                        <p class="my-3">
+                                            The game is developed following the event-driven design pattern. The challenges in this project are basically as follows:
+                                            <ul>
+                                                <li>
+                                                    <span style="font-style: italic;">Map:</span> Load map from bits, detect map edges, and determine how map interacts with other objects.
+                                                </li>
+                                                <li>
+                                                    <span style="font-style: italic;">Moving Mechanism:</span> Hybridize "time state" concept for the backbone of the game. Time stamp is used as a criterion to define
+                                                    the trigger points of certain events. In addition, the movement and animation of objects are optimized to be as smooth as possible.
+                                                </li>
+                                                <li>
+                                                    <span style="font-style: italic;">Music:</span> Background music is played as streaming segments.
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-single modal fade" id="portfolio-single-7" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalScrollable">Santorini Master</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="pt-4 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-10 mx-auto">
+                                    <div class="text-center">
+                                        <h2 class="mb-3">Santorini <span class="base-color"> Master</span></h2>
+                                        <p class="max-width-450">An abstract strategy online board game for 2 players.</p>
+                                    </div>
+                                    <div class="row contact-info mt-5">
+                                        <div class="col-md-6">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6 class="contact_detail-title">Github Repo:</h6>
+                                                    <a class="mb-0" href="https://github.com/Freya-Luo/santorini-web-game" style="font-weight: bold; color: rgb(235, 235, 170)">checkout here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6>Skills:</h6>
+                                                    <p class="mb-0">Java / Handlebars / Software Design Patterns </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="portfolio-single-item image-border">
+                                            <img src="./assets/img/santorini.gif" loading="lazy" class="d-block" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="text-md-left mt-5">
+                                        <p class="my-3">
+                                           Following the game rules, the software object models in correspondence with the physical models are "Board", "Cell", "Player", and "Worker". This project shows a good 
+                                           practice of combining software design patterns with real-world ideas. 
+                                        </p>
+                                        <p class="my-3">
+                                            To implement God cards, <span style="font-style: italic;font-weight: bold ;">Template Method Pattern</span> is considered as a good choice. God cards, from the real-world perspective, only change some behaviors of the worker's move and build actions 
+                                            (or change the game-winning rules) based on the game's core functionalities. With much duplicate logic, core logic is extracted into an <span style="font-style: italic;font-weight: bold ;">abstract class</span> "God" while each god's 
+                                            specific power is kept in their own subclasses.
+                                         </p>
+                                         <p class="my-3">
+                                            Then, what on earth could <span style="font-style: italic;font-weight: bold ;">Template Method Pattern</span> bring to us?
+                                            <ul>
+                                                <li>Design for <span style="font-weight: bold ;">reuse</span> : pull the massive duplicate code into a superclass</li>
+                                                <li>Design for <span style="font-weight: bold ;">understandability</span> : turn the monolithic non-god behaviors into a series of individual actions in which only some particular steps are extended/modified</li>
+                                                <li>Design for <span style="font-weight: bold ;">extensibility</span> : introduce new gods without having to change many contexts</li>
+                                            </ul>
+                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-single modal fade" id="portfolio-single-8" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalScrollable">Hello Maze</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="pt-4 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-10 mx-auto">
+                                    <div class="text-center">
+                                        <h2 class="mb-3">Hello <span class="base-color"> Maze</span></h2>
+                                        <p class="max-width-450">An engine for generating 2D tile-based explorable maze worlds.</p>
+                                    </div>
+                                    <div class="row contact-info mt-5">
+                                        <div class="col-md-6">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6 class="contact_detail-title">Github Repo:</h6>
+                                                    <a class="mb-0" href="https://github.com/Freya-Luo/HelloMazeGame" style="font-weight: bold; color: rgb(235, 235, 170)">checkout here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6>Skills:</h6>
+                                                    <p class="mb-0">Java / Binary Space Partition (BSP)/ Game Design</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="portfolio-single-item image-border">
+                                            <img src="./assets/img/maze.gif" loading="lazy" class="d-block" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="text-md-left mt-5">
+                                        <p class="my-3">
+                                            The worlds generated pseudorandomly consists of a 2D grid of graphical tiles, which users will be able to explore by walking around and interacting with objects in that world.
+                                            In <span style="font-style: italic;font-weight: bold ;">Engine</span> class, two methods are provided for interactions. The first is <span style="font-style: italic;">interactWithInputString(String input)</span> 
+                                            that takes as input a series of keyboard inputs, and returns a 2D TETile array representing the state of the universe after processing all the key presses given in input.
+                                            An the second is <span style="font-style: italic;">interactWithKeyboard()</span>. This method takes input from the keyboard, and draws the result of each keypress to the screen.
+                                        </p>
+                                        <p class="mt-3 mb-0">
+                                            The project has the ability to save the state of the wold while exploring, as well as to subsequently load the world into the exact state it was in when last saved. More specifically, 
+                                            the state includes the random number generator.
+                                        </p>
+                                        <p class="mt-3 mb-0">
+                                            Some creative mechanics are defined and implemented to make up the rulebook for the game.
+                                            <ul>
+                                                <li>Levels are categorized into Easy and Hard modes, where users can see the whole maze world in the Easy exploration mode while only a portion of the world (shielded by black background) in the Hard one.</li>
+                                                <li>Aliens (NPCs) are randomly located and hidden in the Hard mode. Win condition is defined as avatars (users) can successfully escape from the exit and are not attacked by these aliens.</li>
+                                                <li>Hints are provided for users who choose to play in the Hard mode.</li>
+                                                <li>Users can choose different characters and/or differnt shapes of view.</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-single modal fade" id="portfolio-single-9" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalScrollable">Collaborative Learning Forum</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="pt-4 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-10 mx-auto">
+                                    <div class="text-center">
+                                        <h2 class="mb-3">Collaborative Learning <span class="base-color"> Forum</span></h2>
+                                        <p class="max-width-450">A Q & A forum and a real-time communication platform for students and instructors.</p>
+                                    </div>
+                                    <div class="row contact-info mt-5">
+                                        <div class="col-md-6">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6 class="contact_detail-title">Github Repo:</h6>
+                                                    <a class="mb-0" href="https://github.com/Freya-Luo/bubble-bobble" style="font-weight: bold; color: rgb(235, 235, 170)">checkout here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6>Skills:</h6>
+                                                    <p class="mb-0">Django / Django Channels / Google OAuth / WebSocket</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="portfolio-single-item image-border">
+                                            <img src="./assets/img/collab.gif" loading="lazy" class="d-block" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="text-md-left mt-5">
+                                        <p class="my-3">
+                                            <span style="font-size: bold;">Question and Answering Forum</span> mimics the functionalities in Piazza, and it supports four core features:  
+                                            <ul>
+                                                <li>
+                                                    <span style="font-style: italic;">Basic Forum</span>: Tutees can ask questions on the forum and others (tutors and other tutees) can answer the question. Solved questions will be 
+                                                    collected into groups by question tags for others to review.
+                                                </li>
+                                                <li>
+                                                    <span style="font-style: italic;">Posts Filtering and Searching</span>: Posts are filtered by tags and searching so that users can quickly check questions under the same group or containing 
+                                                    the specified keywords.
+                                                </li>
+                                                <li>
+                                                    <span style="font-style: italic;">User's Activities Statistics</span>: The statistics of the user's activity, including posting questions, answering questions, and most concerned disciplines,
+                                                    etc., are collected and plotted to graphs. 
+                                                </li>
+                                            </ul>
+                                        </p>
+                                        <p class="my-3">
+                                            <span style="font-size: bold;">Real-time Communication Platform</span> allows tutees to connect with tutors via various media types.
+                                            <ul>
+                                                <li>
+                                                    <span style="font-style: italic;">Real-time Chat</span>: A chat panel can be poped up from the message icon next to each question. When tutee opens a new chat session, a notification will be
+                                                    pushed to tutor so that they can jump into the conversation.
+                                                </li>
+                                                <li>
+                                                    <span style="font-style: italic;">Voice Call and Video  Call</span>:  Peer-to-peer voice and video calls are routed from the chat panel by integrating with Google Meeting API.
+                                                </li>
+                                            </ul>
+                                        </p>
+                                        <p class="mt-3 mb-0">
+                                            (Due to credential-related reasons, only wireframe is presented here.)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Portfolio Single Modal End  -->
+
+    <!--   Header Start -->
+    <header>
+        <div class="header-navbar h-100">
+            <a class="navbar-brand" href="#"><b>F</b><span>Freya</span></a>
+            <ul class="list-group menu text-center" id="menu">
+                <li class="list-group-item"><a class="active" href="#hero"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li class="list-group-item"><a href="#about"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li class="list-group-item"><a href="#resume"><i class="fa fa-address-book"></i><span>Resume</span></a></li>
+                <li class="list-group-item"><a href="#project"><i class="fa fa-briefcase"></i><span>Projetcs</span></a></li>
+                <li class="list-group-item"><a href="#blog"><i class="fa fa-file-text"></i><span>Servers</span></a></li>
+                <li class="list-group-item"><a href="#contact"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+            </ul>
+            <div class="menu-toggler">
+                <span>
+                    <i class="text-white lni-menu"></i>
+                </span>
+            </div>
+        </div>
+    </header>
+    <!--   Header End   -->
+
+    <main id="main">
+        <section id="hero" class="hero-03 active">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row justify-content-center hero-item">
+                            <div class="col-lg-12">
+                                <div class="hero-content">
+                                    <h1 class="mb-3">Hi, I'm Freya Luo</h1>
+                                    <h4 class="text-capitalize mb-0"><span class="base-color">A  passionate</span> <span class="element" data-elements="Software Engineer.,Full Stack Developer."></span></h4>
+                                    <p class="max-width-450 mx-0 my-4" >Work hard, stay humble, and enjoy life 🧡.</p>
+                                    <ul class="list-inline hero-social">
+                                        <li class="list-inline-item">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="javascript:void(0);">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Hero End  -->
+
+        <!--   About Start   -->
+        <section id="about" class="about">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="title-wrapper">
+                                    <span>About Me</span>
+                                </div>
+                                <div class="title-content">
+                                    <h2 class="base-color">About Me</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="image-border">
+                                    <img src="./assets/img/bio1.jpg" alt="/">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-4 mt-lg-0">
+                                <div class="personal-item " style="padding-top: 30px;">
+                                    <h3 class="text-dark mt-4 mt-lg-0"><span class="base-color">Software</span> Engineer & <span class="base-color">Full Stack</span> Developer</h3>
+                                    <div class="row">
+                                        <div class="col-6 personal-info">
+                                            <ul class="list-unstyled pt-4">
+                                                <li>
+                                                    <p>GitHub : <a href="https://github.com/Freya-Luo" class="base-color"> Checkout my github repo</a></p>
+                                                </li>
+                                                <li>
+                                                    <p>City : <span> Pittsburgh, PA</span></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 personal-info">
+                                            <ul class="list-unstyled pt-4">
+                                                <li>
+                                                    <p>Age : <span> 24</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>Mail : <span> freya.luo17@outlook.com </span></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button-border mt-3 mb-lg-0 mr-4">
+                                    <a href="https://freya-luo.github.io/my-resume/" class="pill-button">Check My Resume</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  Service Start  -->
+                        <div class="services">
+                            <div class="row">
+                                <div style="text-align: justify;">
+                                    <div class="services-item box-hover-border" style="padding-right: 2.25rem;">
+                                        <div class="float-left mt-lg-1 d-inline-block services-icon">
+                                            <i class="lni-brush-alt size-md base-color"></i>
+                                        </div>
+                                        <div class="services-content">
+                                            <h3 class="text-dark">What <span class="base-color">AM I ?</span></h3>
+                                            <p class="text-muted mb-0">
+                                                My name is Freya Luo, a master's student in Electrical and Computer Engineering at Carnegie Mellon University. 
+                                                I have always had an appetite for solving design and coding challenges. This appetite keeps me being enthusiastic about things in connection to softwares.
+                                                Throughout my time in school, I spent countless hours building services and/or web applications not only based on academic standards but my career growth requirements I
+                                                would put together myself. I improved my technical skills as well as soft skills through past work experiences, which helps me to discover my potentials and to figure out my
+                                                future career path.
+                                            </p>
+                                            <br/>
+                                            <p class="text-muted mb-0">
+                                                Discovering the powerful and interesting products integrated by multiple software components, server management, and DevOps as I am working in this industry continues fascinating 
+                                                me while exponentially increasing my passion for software develpoment. A problem or an idea has always been a chance for me to prove myself, and I am happy that my job would never 
+                                                be short of them.
+                                            </p>
+                                            <br/>
+                                            <p class="text-muted mb-0">
+                                                Feel free to reach out to me and hope we can share our passion together one day.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--   Service End   -->
+                        <div style="margin-top: 2rem; text-align: center;">
+                            <p style="font-size: 0.9rem;">Image © 2022 Yue Wang</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--    About End    -->
+
+        <!--    Resume Start   -->
+        <section id="resume" class="resume">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="col-lg-12">
+                                    <div class="title-wrapper">
+                                        <span>My Resume</span>
+                                    </div>
+                                    <div class="title-content">
+                                        <h2 class="base-color">My Resume</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--    TimeLine Start   -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3 class="text-dark">
+                                    <i class="lni-graduation base-color"></i>
+                                    Education
+                                </h3>
+                                <div class="timeline-items box-border">
+                                    <!--    Item 01   -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <h6 class="timeline-title base-color" >MASTER OF ELECTRICAL AND COMPUTER ENGINEERING (CURRENT)</h6>
+                                                <p class="timeline-year"><span>Carnegie Mellon Univeristy</span><span style="color: white;">Feb, 2021 - Dec, 2022</span></p>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <p class="project-title">Project: File Caching Proxy</p>
+                                                <p class="project-intro">
+                                                    A robust distributed system for concurrent whole files caching using Java RMI, threading, and concurrency management techniques.
+                                                    The operations implemented emulates C file operations on locally-cahced files, which follows check-on-use caching protocal and open-close
+                                                    session semantic.
+                                                </p>
+                                                <p class="project-title">Project: Collaborative Learning Web Application</p>
+                                                <p class="project-intro">
+                                                    A Q & A forum for the collaborative learning between tutors and tutees. This learning system supports real-time chat with notifications
+                                                    enabled based on Django Channels and WebSocket API. Googel OAuth, Calendar, and Meetings are integrated into the chat panel to support voice & video calls.
+                                                </p>
+                                                <p class="project-title">Project: Transport System Built On Top Of UDP</p>
+                                                <p class="project-intro">
+                                                    A custom transport layer to transfer different types of files between multiple peer nodes/cluster. With the help of fast transmission 
+                                                    and cumulative Acking, the system ensures complete and correct reception of multiple files across nodes in the presence of a packet loss (robust
+                                                    under medium files transfer with 1% packets loss).
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <h6 class="timeline-title base-color" >BACHELOR OF SCIENCE (DEAN'S HONOURS)</h6>
+                                                <p class="timeline-year"><span>University of Waterloo</span><span style="color: white;">Jul, 2018 - June, 2020</span></p>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <p class="project-title">Project: Hello Maze Game</p>
+                                                <p class="project-intro">
+                                                    A maze game randomly generates maze map utilizaing Binary Partition Space (BSP) algorithm. It not only supports features like multiple game levels,
+                                                    game mechanics, in-session hints, but also supports saving game progress functionality.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <h6 class="timeline-title base-color" >BACHELOR OF ENGINEERING (TOP 3)</h6>
+                                                <p class="timeline-year"><span>Beijing Jiaotong Univeristy</span><span style="color: white;">Sep, 2016 - June, 2018</span></p>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <p class="project-intro">
+                                                    Worked in Labs, and handled lab results with Python and Matlab.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-5 mt-lg-0">
+                                <h3 class="text-dark">
+                                    <i class="lni-pencil base-color"></i>Work Experience
+                                </h3>
+                                <div class="timeline-items box-border">
+                                    <!--    Item 01   -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <h6 class="timeline-title">Software Engineer Intern, <span class="base-color">Amazon Web Services, Inc.</span></h6>
+                                                <p class="timeline-year" style="color: white;">May, 2022 - Aug, 2022</p>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <p class="project-title">Project: Java-based Lambda Standalone Service</p>
+                                                <p class="project-intro">
+                                                    The service is designed for the purpose of improving AWS Certificate Manager's (ACM) security posture. The core activities of this service
+                                                    are to generate certificate signing requests and encrypts certificate private keys, whose interactions with other
+                                                    service components are under great scrutiny. By enabling automated CI/CD, pipeline deploys changes to the Beta
+                                                    stage and triggers hydra integration and canary testing achieveing 100% success rate. The service is integrated into the ACM main service to replace the 
+                                                    existing workflow.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <h6 class="timeline-title">Software Engineer Intern, <span class="base-color">iFLYTEK Corporation</span></h6>
+                                                <p class="timeline-year" style="color: white;">Oct, 2020 - Dec, 2020</p>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <p class="project-title">Project: Diagnostic Analysis Web Service</p>
+                                                <p class="project-intro">
+                                                    One of the most important sub services in the whole Health System, which serves 50+ hospitals locally. By designing and devloping the frontend web pages, configuring API endpoints 
+                                                    to hit the backend service, it could generate medical reports automatically based on the data analyzing result (provided by AI teams) for doctors within a few clicks.
+                                                    In addition, data schemas are remodeled to improve the service performance by 40%.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <h6 class="timeline-title">Research Assistant, <span class="base-color">Univeristy of Waterloo</span></h6>
+                                                <p class="timeline-year" style="color: white;">Jan, 2019 - Apr, 2020</p>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <p class="project-title">Research: Topics Related Computational Physics</p>
+                                                <p class="project-intro">
+                                                    One of the most important sub services in the whole Health System, which serves 50+ hospitals locally. By designing and devloping the frontend web pages, configuring API endpoints 
+                                                    to hit the backend service, it could generate medical reports automatically based on the data analyzing result (provided by AI teams) for doctors within a few clicks.
+                                                    In addition, data schemas are remodeled to improve the service performance by 40%.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--    TimeLine End   -->
+                        <!--  Skill Start  -->
+                        <div class="row mt-5">
+                            <!-- Skill -->
+                            <div class="col-lg-6">
+                                <div>
+                                    <h3 class="mb-0">Programming <span class="base-color"> Languages</span></h3>
+                                </div>
+                                <div id="skills" class="skill-box box-border">
+                                    <div class="skillbar clearfix" data-percent="85%">
+                                        <div class="skillbar-title"><span>Java</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">85%</div>
+                                    </div>
+                                    <div class="skillbar clearfix " data-percent="80%">
+                                        <div class="skillbar-title"><span>Typescript</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">80%</div>
+                                    </div>
+                                    <div class="skillbar clearfix" data-percent="70%">
+                                        <div class="skillbar-title"><span>Python</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">70%</div>
+                                    </div>
+                                    <div class="skillbar clearfix" data-percent="75%">
+                                        <div class="skillbar-title"><span>C / C++</span></div>
+                                        <div class="skillbar-bar fill-skillbar"></div>
+                                        <div class="skill-bar-percent">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div>
+                                    <h3 class="mb-0 mt-5 mt-lg-0">Frameworks <span class="base-color">& Tools </span></h3>
+                                </div>
+                                <div class="language-bar box-border">
+                                    <div class="language-skill row">
+                                        <h4 class="col-6 text-left mb-0">React  <span>Proficient</span></h4>
+                                        <ul class="col-6 list-inline text-right mb-0">
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star-half-empty"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="language-skill row">
+                                        <h4 class="col-6 text-left mb-0">Vue3  <span>Well</span></h4>
+                                        <ul class="col-6 list-inline text-right mb-0">
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star-half-empty"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star-o"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="language-skill row">
+                                        <h4 class="col-6 text-left mb-0">AWS  <span>Good</span></h4>
+                                        <ul class="col-6 list-inline text-right mb-0">
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star-o"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="language-skill row">
+                                        <h4 class="col-6 text-left mb-0">Kotlin  <span>Intermediate</span></h4>
+                                        <ul class="col-6 list-inline text-right mb-0">
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star-o"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star-o"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="language-skill row">
+                                        <h4 class="col-6 text-left mb-0">Spring  <span>Basic</span></h4>
+                                        <ul class="col-6 list-inline text-right mb-0">
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star-half-empty"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star-o"></i>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="fa fa-star-o"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--   Skill End   -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--     Resume End    -->
+
+        <!-- Portfolio Start -->
+        <section id="project" class="portfolio">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="text-center title">
+                                    <div class="title-wrapper">
+                                        <span>My Project</span>
+                                    </div>
+                                    <div class="title-content">
+                                        <h2 class="base-color">My Project</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--   Portfolio Filters   -->
+                            <ul id="portfolio-filter" class="list-unstyled list-inline mb-0 col-lg-12 text-center portfolio-filter">
+                                <li class="button-border list-inline-item">
+                                    <a href="#" data-filter="*" class="pill-button active">All</a>
+                                </li>
+                                <li class="button-border list-inline-item">
+                                    <a href="#" data-filter=".fullstack" class="pill-button">Full Stack App</a>
+                                </li>
+                                <li class="button-border list-inline-item">
+                                    <a href="#" data-filter=".toolframework" class="pill-button">Tool & Framework</a>
+                                </li>
+                                <li class="button-border list-inline-item">
+                                    <a href="#" data-filter=".game" class="pill-button">Game</a>
+                                </li>
+                                <li class="button-border list-inline-item">
+                                    <a href="#" data-filter=".platform" class="pill-button">Platform</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-items row">
+                            <!-- Item 01 -->
+                            <div class="col-lg-6 portfolio-item fullstack toolframework">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="./assets/img/codebook.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single-1"><i class="lni-display-alt"></i></a>
+                                                    <a href="./assets/img/codebook.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">Code Book</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 02 -->
+                            <div class="col-lg-6 portfolio-item fullstack">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="./assets/img/clothing.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single-2"><i class="lni-display-alt"></i></a>
+                                                    <a href="./assets/img/clothing.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">Cloud Clothing</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 03 -->
+                            <div class="col-lg-6 portfolio-item toolframework">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="./assets/img/form.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single-3"><i class="lni-display-alt"></i></a>
+                                                    <a href="./assets/img/form.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">Form Generator</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 04 -->
+                            <div class="col-lg-6 portfolio-item fullstack">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="./assets/img/ebook.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single-4"><i class="lni-display-alt"></i></a>
+                                                    <a href="./assets/img/ebook.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">E-book Reader</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Item 05 -->   
+                             <div class="col-lg-6 portfolio-item toolframework">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="./assets/img/framework.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single-5"><i class="lni-display-alt"></i></a>
+                                                    <a href="./assets/img/framework.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">Analytics Framework</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            <!-- Item 06 -->
+                            <div class="col-lg-6 portfolio-item game">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="./assets/img/bubble.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single-6"><i class="lni-display-alt"></i></a>
+                                                    <a href="./assets/img/bubble.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">Bubble Bobble</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                             
+                            <!-- Item 07 -->
+                            <div class="col-lg-6 portfolio-item game">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="./assets/img/santorini.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single-7"><i class="lni-display-alt"></i></a>
+                                                    <a href="./assets/img/maze.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">Santorini Master</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Item 08 -->
+                            <div class="col-lg-6 portfolio-item game">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="./assets/img/maze.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single-8"><i class="lni-display-alt"></i></a>
+                                                    <a href="./assets/img/maze.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">Hello Maze</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Item 09 -->
+                            <div class="col-lg-6 portfolio-item platform">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="./assets/img/collab.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single-9"><i class="lni-display-alt"></i></a>
+                                                    <a href="./assets/img/collab.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">Collaborative Learning Forum</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>              
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12 text-center pt-2">
+                                <div class="button-border d-inline-block mr-2 mr-sm-4">
+                                    <button class="pill-button showMore" id="showMore">Show More</button>
+                                    <span id="showMore-initials" class="d-none" class="d-none" data-initial="4" data-next="4"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Portfolio End  -->
+
+         <!--  Blog Start  -->
+         <section id="blog" class="blog">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="col-lg-12">
+                                    <div class="text-center title">
+                                        <div class="title-wrapper">
+                                            <span>My Server</span>
+                                        </div>
+                                        <div class="title-content">
+                                            <h2 class="base-color">My Server</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <!--  Item 01 -->
+                             <div class="col-lg-6">
+                                <div class="blog-item box-border">
+                                    <!-- <div class="blog-image">
+                                        <div class="blog-intro">
+                                            <img src="https://placehold.co/720x480" alt="/">
+                                        </div>
+                                    </div> -->
+                                    <div class="blog-content">
+                                       
+                                        <h5 class="mb-3"><a class="text-dark" href="https://freya-luo.notion.site/File-Caching-Proxy-for-Distributed-System-930753c50f604e19b7a8952806806ee6"> File <span class="base-color">Caching Proxy</span> <i class="lni-database"></i></a></h5>
+                                        <p class="blog-feature-tag"><i class="base-color lni-tag"></i> Distributed System, Java RMI, Linux</p>
+                                        <div class="blog-summary">
+                                            <p>
+                                                Caching is a great technique for improving the performance of a distributed system. It can help reduce data transfers, and improve the latency of operations.
+                                            </p>
+                                            <p>
+                                                The caching proxies sits between the client and the server, and handles concurrent Remote Procedure Call (RPC) file operations from the client. 
+                                                This server operates at the granularity of files instead of individual operations which follows C file operation semantics 
+                                                (open, read, write, ..., use of file descriptors, maintain current file position, etc.)
+                                            </p>
+                                        </div>
+                                        <ul class="list-inline mt-4">
+                                            <li class="list-inline-item">
+                                                <i class="lni-calendar base-color"></i>
+                                                <span class="text-muted"> Feb, 2022 - Mar, 2022 </span>
+                                            </li>
+                                        </ul>
+                                        <div class="blog-link">
+                                            <a class="base-color" href="https://freya-luo.notion.site/File-Caching-Proxy-for-Distributed-System-930753c50f604e19b7a8952806806ee6">Read More ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--  Item 02 -->
+                            <div class="col-lg-6">
+                                <div class="blog-item box-border">
+                                    <!-- <div class="blog-image">
+                                        <div class="blog-intro">
+                                            <img src="https://placehold.co/720x480" alt="/">
+                                        </div>
+                                    </div> -->
+                                    <div class="blog-content">
+                                       
+                                        <h5 class="mb-3"><a class="text-dark" href="https://freya-luo.notion.site/Transport-Layer-TCP-965b8abf3bdb475ab26b0d4e7a56169b"> Reliable <span class="base-color">Transport System</span> <i class="lni-network"></i></a></h5>
+                                        <p class="blog-feature-tag"><i class="base-color lni-tag"></i> Computer Networks, ACKing Strategy, Fast Transmission</p>
+                                        <div class="blog-summary">
+                                            <p >
+                                                A custom transport layer to transfer different types of files between multiple peer nodes. It ensures complete and correct reception of multiple files across nodes in the presence and absence of a packet loss.
+                                            </p>
+                                            <p>
+                                                The transport protocol is built on top of UDP that uses Automatic Repeat Request (ARQ), Fast Transmission, and Cumulative ACKing techniques.
+                                            </p>
+                                        </div>
+                                        <ul class="list-inline mt-4">
+                                            <li class="list-inline-item">
+                                                <i class="lni-calendar base-color"></i>
+                                                <span class="text-muted"> Mar, 2022 - Apr, 2022 </span>
+                                            </li>
+                                        </ul>
+                                        <div class="blog-link">
+                                            <a class="base-color" href="https://freya-luo.notion.site/Transport-Layer-TCP-965b8abf3bdb475ab26b0d4e7a56169b">Read More ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--  Item 03 -->
+                            <div class="col-lg-6">
+                                <div class="blog-item box-border">
+                                    <!-- <div class="blog-image">
+                                        <div class="blog-intro">
+                                            <img src="https://placehold.co/720x480" alt="/">
+                                        </div>
+                                    </div> -->
+                                    <div class="blog-content">
+                                       
+                                        <h5 class="mb-3"><a class="text-dark" href="https://freya-luo.notion.site/Distributed-Transaction-using-Two-phase-Commit-ef145a126426435985ca101d032f4c76"> Two-phase Commit <span class="base-color">Transaction System</span> <i class="lni-database"></i></a></h5>
+                                        <p class="blog-feature-tag"><i class="base-color lni-tag"></i> Distributed System, Two-phase Commit, Failure Recovery</p>
+                                        <div class="blog-summary">
+                                            <p>
+                                                A sub-system that generates and publishes group collages assembled from multiple images contributed by multiple individuals. 
+                                                The system consists of several UserNodes, each of which represents a single person’s device, and a signle server, which coordinates the publication of collages.
+                                            </p>
+                                            <p>
+                                                It is tested to be robust to lost messages and to node failures or reboots. Furthermore, it is able to process multiple collage commits concurrently.
+                                            </p>
+                                        </div>
+                                        <ul class="list-inline mt-4">
+                                            <li class="list-inline-item">
+                                                <i class="lni-calendar base-color"></i>
+                                                <span class="text-muted"> Apr, 2022 </span>
+                                            </li>
+                                        </ul>
+                                        <div class="blog-link">
+                                            <a class="base-color" href="https://freya-luo.notion.site/Distributed-Transaction-using-Two-phase-Commit-ef145a126426435985ca101d032f4c76">Read More ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  Item 04 -->
+                            <div class="col-lg-6">
+                                <div class="blog-item box-border">
+                                    <!-- <div class="blog-image">
+                                        <div class="blog-intro">
+                                            <img src="https://placehold.co/720x480" alt="/">
+                                        </div>
+                                    </div> -->
+                                    <div class="blog-content">
+                                       
+                                        <h5 class="mb-3"><a class="text-dark" href="https://freya-luo.notion.site/Content-Distribution-Server-bdb24d11016845af99ddf0a62aeb469d"> Content <span class="base-color">Distribution Server</span> <i class="lni-network"></i></a></h5>
+                                        <p class="blog-feature-tag"><i class="base-color lni-tag"></i> Link-state Advertisement, Keep Alive Mechanism, Priority Rank</p>
+                                        <div class="blog-summary">
+                                            <p >
+                                                Content in the internet is not exclusive to one computer but a network of multiple machines. The server would form an overlay network that connects machines that replicate common content.
+                                            </p>
+                                            <p>
+                                                In a nutshell, it is a program which would be run on many computers/nodes. Each node runs with a corresponding configuration file that specifies its port number, address, and distance metrics of all its “neighbor” nodes.
+                                            </p>
+                                        </div>
+                                        <ul class="list-inline mt-4">
+                                            <li class="list-inline-item">
+                                                <i class="lni-calendar base-color"></i>
+                                                <span class="text-muted"> Mar, 2022 </span>
+                                            </li>
+                                        </ul>
+                                        <div class="blog-link">
+                                            <a class="base-color" href="https://freya-luo.notion.site/Content-Distribution-Server-bdb24d11016845af99ddf0a62aeb469d">Read More ...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- <div class="row">
+                            <div class="col-12 text-center">
+                                <div class="button-border">
+                                    <a href="blog.html" class="pill-button">View More</a>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--   Blog End   -->
+
+        <!-- Contact Start -->
+        <section id="contact" class="contact">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="col-lg-12">
+                                    <div class="text-center title">
+                                        <div class="title-wrapper">
+                                            <span>Get in Touch</span>
+                                        </div>
+                                        <div class="title-content">
+                                            <h2 class="base-color">Get in Touch</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row contact-info">
+                            <div class="col-lg-4 mt-5">
+                                <div class="text-center">
+                                    <div class="base-color">
+                                        <i class="lni-phone-handset size-md"></i>
+                                    </div>
+                                    <div class="mt-3">
+                                        <h5 class="text-dark mb-0">Call ME On</h5>
+                                        <small class="text-muted" style="font-style: italic; font-size: 0.9rem;">+412 916 1817</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-5">
+                                <div class="text-center">
+                                    <div class="base-color">
+                                        <i class="lni-map-marker size-md"></i>
+                                    </div>
+                                    <div class="mt-3">
+                                        <h5 class="text-dark mb-0 contact_detail-title">Location</h5>
+                                        <small class="text-muted" style="font-style: italic; font-size: 0.9rem;">Pittsburgh, PA, USA</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-5">
+                                <div class="text-center">
+                                    <div class="base-color">
+                                        <i class="lni-pointer size-md"></i>
+                                    </div>
+                                    <div class="mt-3">
+                                        <h5 class="text-dark mb-0">Email ME At</h5>
+                                        <small class="text-muted" style="font-style: italic; font-size: 0.9rem;">freya.luo17@outlook.com</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 mt-5 contact-form">
+                                <form id="contactForm">
+                                    <div class="row">
+                                        <div class="col-lg-6 form-item">
+                                            <div class="form-group">
+                                                <input name="name" id="name" type="text" class="form-control contact-data" placeholder="Your Name*" required >
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 form-item">
+                                            <div class="form-group">
+                                                <input name="email" id="email" type="email" class="form-control contact-data" placeholder="Your Email*" required >
+                                            </div>
+                                        </div>
+                                        <div class="col-12 form-item">
+                                            <div class="form-group">
+                                                <input name="subject" id="subject" type="text" class="form-control contact-data" placeholder="Your Subject*" required >
+                                            </div>
+                                        </div>
+                                        <div class="col-12 form-item">
+                                            <div class="form-group">
+                                                <textarea name="comments" id="comments" rows="4" class="form-control contact-data" placeholder="Please leave your message ..."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 mt-4 text-left">
+                                            <div class="button-border">
+                                                <a href="javascript:void(0)" class="pill-button" id="submit-btn" onclick="sendEmail()">Send Message</a>
+                                            </div>
+                                            <div id="message" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000" >
+                                                <div class="toast-body d-inline-block"></div>
+                                                <button type="button" class="pr-3 close" data-dismiss="toast" aria-label="Close">
+                                                    <span aria-hidden="true" class="lni-close size-xs "></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Contact End  -->
+
+    </main>
+
+    <!--   Next and Prev Page -->
+    <div class="next-prev-page">
+        <button type="button" class="prev-page bg-base-color"><i class="fa fa-angle-up text-white"></i></button>
+        <button type="button" class="next-page bg-base-color mt-3"><i class="fa fa-angle-down text-white"></i></button>
+    </div>
+
+    <!-- Start Options -->
+    <div id="color-switcher" class="color-switcher" >
+        <div class="text-center color-pallet hide">
+            <h6 class="theme-skin-title">Theme Skin</h6>
+            <ul class="theme-skin list-inline">
+                <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="flat-skin active">Flat</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="neo-skin">Neo</a>
+                </li>
+            </ul>
+            
+            <h6 class="my-2 color-scheme-title">Light & Dark Version</h6>
+            <ul class="color-scheme list-inline">
+                <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="light-scheme active"><i class="lni-sun"></i> Light</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="javascript:void(0)" class="dark-scheme"><i class="lni-night"></i> Dark</a>
+                </li>
+            </ul>
+        </div>
+        <div class="pallet-button hide">
+            <a href="#" class="cp-toggle"><i class="fa fa-cog fa-spin"></i></a>
+        </div>
+    </div>
+    <!-- End Options -->
+
+    <!--  JavaScripts  -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <!--  Bootstrap Js  -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!--  Easing Js  -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!--  CountTo Js  -->
+    <script src="assets/js/jquery.countTo.js"></script>
+    <!--  Typed Js  -->
+    <script src="assets/js/typed.js"></script>
+    <!--  Magnific Popup Js  -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--  Isotope Js  -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--  Owl Carousel Js  -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--  Particle Js  -->
+    <script src="assets/js/particles.min.js"></script>
+    <!--  Particle App Js  -->
+    <script src="assets/js/particles.app.js"></script>
+    <!--  Custom JS  -->
+    <script src="assets/js/arshia.js"></script>
+
+    </body>
+</html>
