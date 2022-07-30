@@ -1654,10 +1654,10 @@
             <h6 class="my-2 color-scheme-title">Light & Dark Theme</h6>
             <ul class="color-scheme list-inline">
                 <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="light-scheme active" onclick="changeBioSrc(false)"><i class="lni-sun"></i> Light</a>
+                    <a href="javascript:void(0)" class="light-scheme active" onclick="changeBioSrcAndBg(false)"><i class="lni-sun"></i> Light</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="javascript:void(0)" class="dark-scheme" onclick="changeBioSrc(true)"><i class="lni-night"></i> Dark</a>
+                    <a href="javascript:void(0)" class="dark-scheme" onclick="changeBioSrcAndBg(true)"><i class="lni-night"></i> Dark</a>
                 </li>
             </ul>
         </div>
@@ -1691,13 +1691,18 @@
     <script src="assets/js/arshia.js"></script>
 
     <script>
-        function changeBioSrc(isDark) {
+        function changeBioSrcAndBg(isDark) {
             const bioiImg = document.getElementById("bio-img");
+            const root = document.querySelector(":root");
+
             if (isDark) {
+                root.style.setProperty("--pseudo-backgroundcolor", "rgba(0, 0, 0, 0.7)");
                 bioiImg.src = "./assets/img/bio-dark.jpg"
             } else {
+                root.style.setProperty("--pseudo-backgroundcolor", 'rgba(169, 169, 169, 0.7)');
                 bioiImg.src = "./assets/img/bio-light.jpg"
             }
+            console.log(root)
         }
     </script>
 

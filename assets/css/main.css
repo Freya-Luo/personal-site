@@ -174,6 +174,10 @@ a, button {
   align-items: center;
 }
 
+:root {
+  --pseudo-backgroundcolor: rgba(0, 0, 0, 0.7);
+}
+
 /*-------------------------
         ColorPallet
 -------------------------*/
@@ -541,7 +545,7 @@ header .navbar-brand b {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--pseudo-backgroundcolor);
 }
 
 .hero-03 .hero-content {
