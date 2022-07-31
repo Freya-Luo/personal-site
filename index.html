@@ -26,7 +26,7 @@
         <!-- Magnific Popup Css -->
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <!-- Colors Css -->
-        <link rel="stylesheet" href="assets/css/color/orange-color.css" id="option-color">
+        <link rel="stylesheet" href="assets/css/color/golden-color.css" id="option-color">
         <!--  Custom Style CSS  -->
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
@@ -1694,11 +1694,14 @@
         function changeBioSrcAndBg(isDark) {
             const bioiImg = document.getElementById("bio-img");
             const root = document.querySelector(":root");
+            const cssTheme = document.getElementById("option-color")
 
             if (isDark) {
+                cssTheme.href = "assets/css/color/golden-color.css"
                 root.style.setProperty("--pseudo-backgroundcolor", "rgba(0, 0, 0, 0.7)");
                 bioiImg.src = "./assets/img/bio-dark.jpg"
             } else {
+                cssTheme.href = "assets/css/color/orange-color.css"
                 root.style.setProperty("--pseudo-backgroundcolor", 'rgba(169, 169, 169, 0.7)');
                 bioiImg.src = "./assets/img/bio-light.jpg"
             }
