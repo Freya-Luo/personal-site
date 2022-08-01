@@ -179,12 +179,17 @@
                                                     <span style="font-style: italic;">Mobile responsiveness</span> supoprt
                                                 </li>
                                                 <li>
-                                                    <span style="font-style: italic;">GraphQL server and Apollo client</span> are applied to replace REST API 
+                                                    <span style="font-style: italic;">GraphQL server and Apollo client</span> are applied to replace REST API and Redux. 
                                                 </li>
                                                 <li>
                                                     <span style="font-style: italic;">Service Worker</span> is added into the existing project to convert it to PWA
                                                 </li>
                                             </ul> 
+                                        </p>
+                                        <p>Discussion: Using GraphQL and Apollo to replace Redux store takes advantage of caching by query. The first time a query is sent to the server, the users' browser would 
+                                            cache the return data for them if using in memory cache. So, next time if the same query is called, browser fetches data from cache instead of the remote server.
+                                            In addtion, with GraphQL API, users gain the control of getting exactly what they need, how the data is structured and nothing more. However, it requires more work and
+                                            constant coordination to be done on the backend. The backend must be configured to support GraphQL (e.g. set up queries, type definitions).
                                         </p>
                                     </div>
                                 </div>
