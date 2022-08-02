@@ -2529,7 +2529,7 @@ canvas.particles-js-canvas-el {
 }
 
 .contact .form-item .contact-data::placeholder {
-  color: #ff645e !important;
+  color: var(--placeholder-color, #ddae3f);
 }
 
 .contact .form-item .contact-data {
@@ -2545,7 +2545,47 @@ canvas.particles-js-canvas-el {
 .blog-summary {
   overflow: hidden;
   text-overflow: ellipsis;
+  display: block;
   display: -webkit-box;
   -webkit-line-clamp: 6; /* number of lines to show */
   -webkit-box-orient: vertical;
+  -o-text-overflow: ellipsis;   /* required for Opera */
+  -ms-text-overflow: ellipsis;  /* required for IE8, allegedly */
+}
+
+/** Mozilla Firefox */
+@-moz-document url-prefix() {
+  .blog-summary {
+      line-height: 1.5rem;
+      max-height: 11.5rem;
+      overflow: scroll;
+      scrollbar-width: none;
+  }
+}
+
+/** Microsoft Edge */
+@supports (-ms-ime-align: auto) {
+  .blog-summary {
+    line-height: 1.5rem;
+    max-height: 11.5rem;
+    overflow: scroll;
+}
+
+  .blog-summary::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/** Safari, Internet Explorer */
+@media not all and (min-resolution: 0.001dpcm),
+all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .blog-summary {
+      line-height: 1.5rem;
+      max-height: 11.5rem;
+      overflow: scroll;
+  }
+
+  .blog-summary::-webkit-scrollbar {
+    display: none;
+  }
 }
