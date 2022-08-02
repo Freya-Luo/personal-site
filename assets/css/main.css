@@ -2560,6 +2560,7 @@ canvas.particles-js-canvas-el {
       max-height: 11.5rem;
       overflow: scroll;
       scrollbar-width: none;
+      -webkit-line-clamp: unset;
   }
 }
 
@@ -2569,6 +2570,7 @@ canvas.particles-js-canvas-el {
     line-height: 1.5rem;
     max-height: 11.5rem;
     overflow: scroll;
+    -webkit-line-clamp: unset;
 }
 
   .blog-summary::-webkit-scrollbar {
@@ -2583,6 +2585,7 @@ all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       line-height: 1.5rem;
       max-height: 11.5rem;
       overflow: scroll;
+      -webkit-line-clamp: unset;
   }
 
   .blog-summary::-webkit-scrollbar {
