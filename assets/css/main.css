@@ -175,7 +175,7 @@ a, button {
 }
 
 :root {
-  --pseudo-backgroundcolor: rgba(0, 0, 0, 0.7);
+  --pseudo-backgroundcolor: rgba(0, 0, 0, 0.3);
 }
 
 /*-------------------------
@@ -1040,10 +1040,10 @@ canvas.particles-js-canvas-el {
 
 .portfolio .portfolio-item {
   margin-top: 30px;
+  position: relative;
 }
 
 .portfolio .portfolio-item-content {
-  position: relative;
   border-radius: 1.25rem;
 }
 
@@ -2513,9 +2513,9 @@ canvas.particles-js-canvas-el {
     background-color: #3c3c3c !important;
   }
 
-  .color-scheme-title, .color-scheme {
+  /* .color-scheme-title, .color-scheme {
     display: none !important;
-  }
+  } */
 
   @media (min-width: 992px){
     .flat-demo .blog-single .post-sidebar-content{

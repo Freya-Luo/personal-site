@@ -465,56 +465,47 @@ function validateEmail(email) {
     return re.test(email);
 }
 function sendEmail() {
-
     "use strict";
 
-    var name     = $('#name').val();
-    var email    = $('#email').val();
-    var subject  = $('#subject').val();
-    var comments = $('#comments').val();
+    var name     = $('#name').val().trim();
+    var email    = $('#email').val().trim();
+    var subject  = $('#subject').val().trim();
+    var comments = $('#comments').val().trim();
 
-    if(!name){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Name is  required');
-    } else if(!email){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Email is  required');
-    } else if(!validateEmail(email)){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Email is not valid');
-    } else if(!subject){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Subject is  required');
-    }else if(!comments){
-        $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
-        $('.toast-body').html('Comments is  required');
-    }else {
-        $.ajax({
-            type: 'POST',
-            data: $("#contactForm").serialize(),
-            url:  "sendEmail.php",
-            beforeSend: function() {
-                $('#submit-btn').html('<span class="spinner-border spinner-border-sm"></span> Loading..');
-            },
-            success: function(data) {
-                $('#submit-btn').html('Submit');
-                var myObj = JSON.parse(data);
-                if(myObj['status']=='Congratulation'){
-                    $('#message').toast('show').addClass('bg-success').removeClass('bg-danger bg-warning');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }else if(myObj['status']=='Error'){
-                    $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }else if(myObj['status']=='Warning'){
-                    $('#message').toast('show').addClass('bg-warning').removeClass('bg-success bg-danger');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }
-            },
-            error: function(xhr) {
-                $('#submit-btn').html('Submit');
-                $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
-                $('.toast-body').html('<strong> Error : </strong> Something went wrong, Please try again.');
-            },
-        });
+    function showMessage(msg) {
+        $('#message').toast('show').removeClass('bg-success bg-warning bg-danger').addClass('bg-danger');
+        $('.toast-body').html(msg);
     }
+
+    if (!name) {
+        showMessage('Name is required');
+        return;
+    }
+    if (!email) {
+        showMessage('Email is required');
+        return;
+    }
+    if (!validateEmail(email)) {
+        showMessage('Email is not valid');
+        return;
+    }
+    if (!subject) {
+        showMessage('Subject is required');
+        return;
+    }
+    if (!comments) {
+        showMessage('Comments are required');
+        return;
+    }
+
+    // Build mailto link
+    var mailtoLink = `mailto:someone@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n\n' +
+        comments
+    )}`;
+
+    window.location.href = mailtoLink;
+    $('#message').toast('show').removeClass('bg-danger bg-warning').addClass('bg-success');
+    $('.toast-body').html('Your mail client should open now. Please send the email manually.');
 }
